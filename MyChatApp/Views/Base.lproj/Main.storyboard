@@ -320,6 +320,7 @@
                     </navigationItem>
                     <connections>
                         <outlet property="messageTextField" destination="9Dd-tP-Gzw" id="QA3-SG-mn4"/>
+                        <outlet property="tableView" destination="VkG-yg-j69" id="PYH-0X-7xV"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qay-40-8if" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
