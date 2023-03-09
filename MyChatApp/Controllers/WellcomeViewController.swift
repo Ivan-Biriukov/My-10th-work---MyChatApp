@@ -15,7 +15,17 @@ class WellcomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configLabel()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         animateLabelText()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        titleLabel.text = ""
+        charIndex = 0.0
     }
     
     func configLabel() {
