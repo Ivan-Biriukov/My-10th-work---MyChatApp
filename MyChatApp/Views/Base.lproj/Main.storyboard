@@ -310,7 +310,14 @@
                             <constraint firstItem="VkG-yg-j69" firstAttribute="top" secondItem="uXc-dy-lVj" secondAttribute="top" constant="40" id="xnZ-E8-YQh"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Lj8-nB-s39"/>
+                    <navigationItem key="navigationItem" id="Lj8-nB-s39">
+                        <barButtonItem key="rightBarButtonItem" title="Log Out" id="pcT-Ai-mDN">
+                            <color key="tintColor" systemColor="systemRedColor"/>
+                            <connections>
+                                <action selector="logoutButtonPressed:" destination="MhG-rE-cVR" id="ujW-R4-k9e"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="messageTextField" destination="9Dd-tP-Gzw" id="QA3-SG-mn4"/>
                     </connections>
@@ -348,6 +355,9 @@
         <image name="paperplane.fill" catalog="system" width="128" height="119"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

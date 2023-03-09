@@ -23,7 +23,7 @@ class LoginViewController: UIViewController {
                     print("There was some problem in Login procces - \(e.localizedDescription)")
                 } else {
                     print("Login succesfully")
-                    self.performSegue(withIdentifier: "fromLoginToChat", sender: self)
+                    self.performSegue(withIdentifier: K.loginToChat, sender: self)
                 }
             }
         }

@@ -21,6 +21,7 @@
 		57AA36C829BA1EBA00549312 /* PrototypeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57AA36C629BA1EBA00549312 /* PrototypeCellTableViewCell.xib */; };
 		57AA36C929BA1EBA00549312 /* PrototypeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AA36C729BA1EBA00549312 /* PrototypeCellTableViewCell.swift */; };
 		57AA36CB29BA1ECB00549312 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57AA36CA29BA1ECB00549312 /* GoogleService-Info.plist */; };
+		57AA36CE29BA4A8000549312 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AA36CD29BA4A8000549312 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +40,7 @@
 		57AA36C629BA1EBA00549312 /* PrototypeCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrototypeCellTableViewCell.xib; sourceTree = "<group>"; };
 		57AA36C729BA1EBA00549312 /* PrototypeCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrototypeCellTableViewCell.swift; sourceTree = "<group>"; };
 		57AA36CA29BA1ECB00549312 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		57AA36CD29BA4A8000549312 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		754CC4DDEF91701533BFD257 /* Pods-MyChatApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyChatApp.debug.xcconfig"; path = "Target Support Files/Pods-MyChatApp/Pods-MyChatApp.debug.xcconfig"; sourceTree = "<group>"; };
 		BCAB4F7D212E006171695170 /* Pods-MyChatApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyChatApp.release.xcconfig"; path = "Target Support Files/Pods-MyChatApp/Pods-MyChatApp.release.xcconfig"; sourceTree = "<group>"; };
 		C0C7A0CE43C8DE2B4670ABCE /* Pods_MyChatApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyChatApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,6 +87,7 @@
 		57AA36A729BA1C2600549312 /* MyChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				57AA36CC29BA4A6100549312 /* Constants */,
 				57AA36BC29BA1E5800549312 /* Controllers */,
 				57AA36A829BA1C2600549312 /* AppDelegate.swift */,
 				57AA36AA29BA1C2600549312 /* SceneDelegate.swift */,
@@ -119,13 +122,20 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		57AA36CC29BA4A6100549312 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				57AA36CD29BA4A8000549312 /* Constants.swift */,
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
 		B885CB939F96641278E05F4F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				754CC4DDEF91701533BFD257 /* Pods-MyChatApp.debug.xcconfig */,
 				BCAB4F7D212E006171695170 /* Pods-MyChatApp.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -254,6 +264,7 @@
 				57AA36A929BA1C2600549312 /* AppDelegate.swift in Sources */,
 				57AA36C329BA1E7300549312 /* WellcomeViewController.swift in Sources */,
 				57AA36AB29BA1C2600549312 /* SceneDelegate.swift in Sources */,
+				57AA36CE29BA4A8000549312 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

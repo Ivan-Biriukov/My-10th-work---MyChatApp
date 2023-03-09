@@ -26,7 +26,7 @@ class RegisterViewController: UIViewController {
                     print("while registration process was some error \(e.localizedDescription)")
                 } else {
                     print("Registration has complited succesfully")
-                    self.performSegue(withIdentifier: "fromRegisterToChat", sender: self)
+                    self.performSegue(withIdentifier: K.registerToChat, sender: self)
                 }
             }
         }
