@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iGc-gq-ivo">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xu0-Ze-dfm">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
@@ -11,7 +11,7 @@
         <!--Wellcome View Controller-->
         <scene sceneID="usv-MD-y1g">
             <objects>
-                <viewController id="qMg-At-ept" customClass="WellcomeViewController" customModule="Chat_s_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qMg-At-ept" customClass="WellcomeViewController" customModule="MyChatApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="AdS-Bz-VpI">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -82,12 +82,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zgH-hC-4wP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="104.58015267175573" y="316.90140845070425"/>
+            <point key="canvasLocation" x="1031.2977099236641" y="316.90140845070425"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="Chat_s_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="MyChatApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,17 +156,17 @@
                     <connections>
                         <outlet property="emailTextField" destination="IDa-jb-N6g" id="5tC-m6-31A"/>
                         <outlet property="passwordTextField" destination="o9l-jf-lRS" id="21h-yB-BBj"/>
-                        <segue destination="MhG-rE-cVR" kind="show" identifier="LoginToChat" id="fd3-IC-OnG"/>
+                        <segue destination="MhG-rE-cVR" kind="show" identifier="fromLoginToChat" id="fd3-IC-OnG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057.2519083969464" y="723.94366197183103"/>
+            <point key="canvasLocation" x="1982.4427480916029" y="723.94366197183103"/>
         </scene>
         <!--Register View Controller-->
         <scene sceneID="ALc-tM-Xc8">
             <objects>
-                <viewController id="0au-4W-YaM" customClass="RegisterViewController" customModule="Chat_s_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0au-4W-YaM" customClass="RegisterViewController" customModule="MyChatApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DTE-Fa-e8f">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -235,17 +235,17 @@
                     <connections>
                         <outlet property="emailTextField" destination="Mk8-Ou-T3c" id="WYF-Wb-DF1"/>
                         <outlet property="passwordTextField" destination="NWF-4I-lNH" id="A85-qX-VHf"/>
-                        <segue destination="MhG-rE-cVR" kind="show" identifier="RegisterToChat" id="QnQ-Wf-hL0"/>
+                        <segue destination="MhG-rE-cVR" kind="show" identifier="fromRegisterToChat" id="mxp-AR-RLh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qjC-vT-UoI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1057.2519083969464" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1982.4427480916029" y="3.5211267605633805"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="HBR-ho-8kD">
             <objects>
-                <viewController id="MhG-rE-cVR" customClass="ChatViewController" customModule="Chat_s_app" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="MhG-rE-cVR" customClass="ChatViewController" customModule="MyChatApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dSM-op-BWt">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -317,25 +317,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qay-40-8if" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1970.2290076335878" y="316.90140845070425"/>
+            <point key="canvasLocation" x="2896.9465648854962" y="316.90140845070425"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="moF-PU-lFk">
+        <scene sceneID="VtC-pn-W90">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iGc-gq-ivo" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Xu0-Ze-dfm" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IP3-gT-hal">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Yh0-P2-Qk7">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="qMg-At-ept" kind="relationship" relationship="rootViewController" id="Hw2-w6-nBG"/>
+                        <segue destination="qMg-At-ept" kind="relationship" relationship="rootViewController" id="AbT-Io-kAI"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="RW8-xd-u62" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="enx-7E-p7N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-822.13740458015263" y="316.90140845070425"/>
+            <point key="canvasLocation" x="104.58015267175573" y="316.90140845070425"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
