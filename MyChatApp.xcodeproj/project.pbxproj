@@ -13,6 +13,13 @@
 		57AA36B029BA1C2600549312 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AA36AE29BA1C2600549312 /* Main.storyboard */; };
 		57AA36B229BA1C2A00549312 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 57AA36B129BA1C2A00549312 /* Assets.xcassets */; };
 		57AA36B529BA1C2A00549312 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 57AA36B329BA1C2A00549312 /* LaunchScreen.storyboard */; };
+		57AA36C129BA1E7300549312 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AA36BD29BA1E7200549312 /* LoginViewController.swift */; };
+		57AA36C229BA1E7300549312 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AA36BE29BA1E7200549312 /* RegisterViewController.swift */; };
+		57AA36C329BA1E7300549312 /* WellcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AA36BF29BA1E7200549312 /* WellcomeViewController.swift */; };
+		57AA36C429BA1E7300549312 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AA36C029BA1E7200549312 /* ChatViewController.swift */; };
+		57AA36C829BA1EBA00549312 /* PrototypeCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 57AA36C629BA1EBA00549312 /* PrototypeCellTableViewCell.xib */; };
+		57AA36C929BA1EBA00549312 /* PrototypeCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57AA36C729BA1EBA00549312 /* PrototypeCellTableViewCell.swift */; };
+		57AA36CB29BA1ECB00549312 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 57AA36CA29BA1ECB00549312 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		57AA36B129BA1C2A00549312 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		57AA36B429BA1C2A00549312 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		57AA36B629BA1C2A00549312 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		57AA36BD29BA1E7200549312 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		57AA36BE29BA1E7200549312 /* RegisterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		57AA36BF29BA1E7200549312 /* WellcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WellcomeViewController.swift; sourceTree = "<group>"; };
+		57AA36C029BA1E7200549312 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		57AA36C629BA1EBA00549312 /* PrototypeCellTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PrototypeCellTableViewCell.xib; sourceTree = "<group>"; };
+		57AA36C729BA1EBA00549312 /* PrototypeCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrototypeCellTableViewCell.swift; sourceTree = "<group>"; };
+		57AA36CA29BA1ECB00549312 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +70,38 @@
 		57AA36A729BA1C2600549312 /* MyChatApp */ = {
 			isa = PBXGroup;
 			children = (
+				57AA36BC29BA1E5800549312 /* Controllers */,
 				57AA36A829BA1C2600549312 /* AppDelegate.swift */,
 				57AA36AA29BA1C2600549312 /* SceneDelegate.swift */,
 				57AA36AC29BA1C2600549312 /* ViewController.swift */,
-				57AA36AE29BA1C2600549312 /* Main.storyboard */,
+				57AA36C529BA1E8C00549312 /* Views */,
 				57AA36B129BA1C2A00549312 /* Assets.xcassets */,
-				57AA36B329BA1C2A00549312 /* LaunchScreen.storyboard */,
 				57AA36B629BA1C2A00549312 /* Info.plist */,
+				57AA36CA29BA1ECB00549312 /* GoogleService-Info.plist */,
 			);
 			path = MyChatApp;
+			sourceTree = "<group>";
+		};
+		57AA36BC29BA1E5800549312 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				57AA36C029BA1E7200549312 /* ChatViewController.swift */,
+				57AA36BD29BA1E7200549312 /* LoginViewController.swift */,
+				57AA36BE29BA1E7200549312 /* RegisterViewController.swift */,
+				57AA36BF29BA1E7200549312 /* WellcomeViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		57AA36C529BA1E8C00549312 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				57AA36C729BA1EBA00549312 /* PrototypeCellTableViewCell.swift */,
+				57AA36C629BA1EBA00549312 /* PrototypeCellTableViewCell.xib */,
+				57AA36B329BA1C2A00549312 /* LaunchScreen.storyboard */,
+				57AA36AE29BA1C2600549312 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +162,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AA36C829BA1EBA00549312 /* PrototypeCellTableViewCell.xib in Resources */,
 				57AA36B529BA1C2A00549312 /* LaunchScreen.storyboard in Resources */,
+				57AA36CB29BA1ECB00549312 /* GoogleService-Info.plist in Resources */,
 				57AA36B229BA1C2A00549312 /* Assets.xcassets in Resources */,
 				57AA36B029BA1C2600549312 /* Main.storyboard in Resources */,
 			);
@@ -138,8 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57AA36C929BA1EBA00549312 /* PrototypeCellTableViewCell.swift in Sources */,
+				57AA36C129BA1E7300549312 /* LoginViewController.swift in Sources */,
+				57AA36C229BA1E7300549312 /* RegisterViewController.swift in Sources */,
 				57AA36AD29BA1C2600549312 /* ViewController.swift in Sources */,
+				57AA36C429BA1E7300549312 /* ChatViewController.swift in Sources */,
 				57AA36A929BA1C2600549312 /* AppDelegate.swift in Sources */,
+				57AA36C329BA1E7300549312 /* WellcomeViewController.swift in Sources */,
 				57AA36AB29BA1C2600549312 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
