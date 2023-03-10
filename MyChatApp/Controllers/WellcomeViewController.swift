@@ -20,12 +20,14 @@ class WellcomeViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         animateLabelText()
+        navigationController?.isNavigationBarHidden = true
     }
     
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         titleLabel.text = ""
         charIndex = 0.0
+        navigationController?.isNavigationBarHidden = false
     }
     
     func configLabel() {

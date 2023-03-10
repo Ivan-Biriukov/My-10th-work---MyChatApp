@@ -14,7 +14,6 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-    
 
     @IBAction func loginButtonPressed(_ sender: UIButton) {
         if let email = emailTextField.text, let password = passwordTextField.text {
@@ -22,7 +21,6 @@ class LoginViewController: UIViewController {
                 if let e = error {
                     print("There was some problem in Login procces - \(e.localizedDescription)")
                 } else {
-                    print("Login succesfully")
                     self.performSegue(withIdentifier: K.loginToChat, sender: self)
                 }
             }
